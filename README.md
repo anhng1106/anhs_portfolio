@@ -4,7 +4,7 @@ This is a personal portfolio website built with **React** to showcase my project
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Portfolio Screenshot](./assets/img/banner.png)
+![Portfolio Screenshot](../personal-portfolio/src/assets/img/banner.png)
 
 ---
 
