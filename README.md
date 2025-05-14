@@ -4,7 +4,7 @@ This is a personal portfolio website built with **React** to showcase my project
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![Portfolio Screenshot](../personal-portfolio/src/assets/img/banner.png)
+![Portfolio Screenshot](https://private-user-images.githubusercontent.com/123630454/443869830-f27cc829-06d1-4297-9f9b-2c6e59f30983.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyNjM3OTcsIm5iZiI6MTc0NzI2MzQ5NywicGF0aCI6Ii8xMjM2MzA0NTQvNDQzODY5ODMwLWYyN2NjODI5LTA2ZDEtNDI5Ny05ZjliLTJjNmU1OWYzMDk4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNFQyMjU4MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYjMwMmMzZGQ1ODEzODhhMGZmODc5MTVhNDBlMjVmY2NhMGNkNTQ3ZDZmNTc3ODYyYTU3YWYzYjMzODg3N2E0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Qlfy6ZL8PsXHI4G-VOmdYW3OO8xd4ThNPlti8TTGv0Y)
 
 ---
 
