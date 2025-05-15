@@ -570,7 +570,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   padding: 60px 0 200px 0;
@@ -723,4 +723,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/************ Timeline Css ************/
+.timeline-section {
+  background-color: #121212;
+  color: #fff;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  border-left: 3px solid #aa367c;
+  padding-left: 20px;
+}
+
+.timeline h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-dot-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  left: -24px; /* aligns to timeline */
+}
+
+.timeline-year {
+  font-size: 14px;
+  color: #b8b8b8;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
 }
