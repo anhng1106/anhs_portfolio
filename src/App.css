@@ -354,10 +354,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  z-index: 10;
 }
+.skill-slider .react-multiple-carousel__arrow--left {
+  left: 10px;
+}
+
+.skill-slider .react-multiple-carousel__arrow--right {
+  right: 10px;
+}
+
 .skill-slider .item img {
-  width: 50%;
+  width: 30%;
   margin: 0 auto 15px auto;
+  margin-top: 15%;
 }
 .background-image-left {
   top: 28%;
@@ -365,6 +375,73 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+.skill-tabs {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+.skill-tabs .nav-item {
+  width: 25%;
+}
+
+.skill-tabs .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.skill-tabs .nav-link:hover,
+.skill-tabs .nav-link:focus {
+  color: #fff !important;
+}
+
+.skill-tabs .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.skill-tabs .nav-link.active::before {
+  width: 100% !important;
+}
+
+/* .skill-tabs .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+} */
+
+.nav-link#skills-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#skills-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#skills-tabs-tab-third {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#skills-tabs-tab-fourth {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
 }
 
 /************ Projects Css ************/
