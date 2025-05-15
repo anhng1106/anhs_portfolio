@@ -5,48 +5,46 @@ import "animate.css";
 
 const timelineData = [
   {
-    year: "2025",
-    title: "Frontend Developer Intern",
-    company: "Company A",
-    description: "Built React components and optimized user experience.",
+    date: "January 2025 - May 2025",
+    title: "Software Engineer Intern ",
+    company: "Maatop Oy",
+    content:
+      "Built a speech-driven interface for automated digging machines using Vue.js and the OpenAI API, enabling users to place structured orders in under 5 seconds. Improved fuzzy voice matching accuracy from 70% to 95% with Fuse.js and reduced manual input errors by 80%. Integrated with Maatop’s internal API to process 50+ real-time orders during field testing, achieving seamless frontend-backend orchestration. Collaborated with UX testers to reduce average order time by 40%.",
+    icon: "🧑‍💻",
   },
   {
-    year: "2024",
-    title: "Freelancer",
-    company: "Remote",
-    description: "Developed websites with Next.js and Firebase for clients.",
-  },
-  {
-    year: "2023",
-    title: "Computer Science Degree",
-    company: "Haaga-Helia",
-    description: "Graduated with focus on mobile and cloud development.",
+    date: "December 2024 - March 2025",
+    title: "Front End Developer Intern",
+    company: "Neuwo Oy",
+    content:
+      "Built and deployed a modular, responsive web app using Next.js, React, MUI, and TypeScript to serve over 1.2M monthly queries. Integrated with Supabase to query 100M+ audience records with smart filtering and pagination, maintaining <1.5s average load time. Implemented advanced keyword search using PostgreSQL full-text search, improving audience segment precision by 85%. Led a complete UI/UX redesign in Figma, boosting engagement by 30% and session duration by 25%. Reduced initial load time by 35% via performance optimization and contributed to code reviews and documentation, accelerating onboarding by 40%.",
+    icon: "🚀",
   },
 ];
 
 export const Timeline = () => {
   return (
-    <section className="timeline" id="timeline">
-      <Container>
-        <h2>My Journey</h2>
-        <div className="timeline">
-          {timelineData.map((item, index) => (
-            <Row key={index} className="timeline-item">
-              <Col md={1} className="timeline-dot-col">
-                <div className="timeline-dot" />
-              </Col>
-              <Col md={11}>
-                <div className="timeline-content">
-                  <span className="timeline-year">{item.year}</span>
-                  <h5>{item.title}</h5>
-                  <h6 className="text-muted">{item.company}</h6>
-                  <p>{item.description}</p>
-                </div>
-              </Col>
-            </Row>
-          ))}
-        </div>
-      </Container>
+    <section className="timeline-modern-container">
+      <h2>WORK EXPERIENCE</h2>
+      <div className="timeline-modern">
+        {timelineData.map((item, index) => (
+          <div
+            className={`timeline-item-modern ${
+              index % 2 === 0 ? "left" : "right"
+            }`}
+            data-aos="fade-up"
+            key={index}
+          >
+            <div className="timeline-content-modern">
+              <span className="timeline-date">{item.date}</span>
+              <div className="timeline-icon">{item.icon}</div>
+              <h5>{item.company}</h5>
+              <p>{item.title}</p>
+              <p>{item.content}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

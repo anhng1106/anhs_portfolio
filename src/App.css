@@ -726,51 +726,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Timeline Css ************/
-.timeline-section {
-  background-color: #121212;
-  color: #fff;
+.timeline-modern-container {
+  background: transparent;
   padding: 80px 20px;
-  position: relative;
 }
 
-.timeline {
-  position: relative;
-  border-left: 3px solid #aa367c;
-  padding-left: 20px;
-}
-
-.timeline h2 {
+.timeline-modern-container h2 {
+  text-align: center;
   font-size: 45px;
   font-weight: 700;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
-.timeline-item {
-  margin-bottom: 40px;
+.timeline-modern {
   position: relative;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.timeline-dot-col {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  padding-top: 6px;
-}
-
-.timeline-dot {
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
-  border-radius: 50%;
-  border: 3px solid #fff;
+.timeline-modern::after {
+  content: "";
   position: absolute;
-  left: -24px; /* aligns to timeline */
+  width: 3px;
+  background: linear-gradient(180deg, #aa367c, #4a2fbd);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.timeline-year {
-  font-size: 14px;
+.timeline-item-modern {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item-modern.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item-modern.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content-modern {
+  background-color: #1f1f1f;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  border-left: 4px solid #aa367c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #fff;
+  color: #121212;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: 1;
+  border: 3px solid #aa367c;
+}
+
+.timeline-item-modern.right .timeline-icon {
+  left: auto;
+  right: -20px;
+}
+
+.timeline-date {
+  font-size: 13px;
   color: #b8b8b8;
-  font-weight: bold;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
