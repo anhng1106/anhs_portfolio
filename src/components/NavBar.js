@@ -33,11 +33,12 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="#home" className="navbar-title">
+          <HashLink smooth to="/#home" className="navbar-title">
             <h4>
               anh <span className="highlight">nguyen</span>
             </h4>
-          </Navbar.Brand>
+          </HashLink>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
