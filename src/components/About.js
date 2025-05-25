@@ -15,8 +15,8 @@ export const About = () => {
             Hello! I'm <strong>Anh Nguyen</strong>, a passionate full-stack
             developer who loves turning ideas into intuitive digital
             experiences. With a strong foundation in frontend technologies like
-            ReactJS, I specialize in building responsive, accessible, and
-            high-performing web applications.
+            ReactJS or Next.js, I specialize in building responsive, accessible,
+            and high-performing web applications.
           </p>
           <p>
             Over the past few years from school to reality worklife, I’ve worked

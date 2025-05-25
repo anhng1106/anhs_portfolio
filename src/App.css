@@ -562,9 +562,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 0.8px;
+  margin-bottom: 8px;
+
   line-height: 1.1em;
 }
 .proj-txtx span {
@@ -572,6 +575,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  text-align: center;
+  display: block;
+  margin-top: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
 }
 .background-image-right {
   top: 20%;
@@ -580,6 +589,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+.view-code-btn {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 8px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.view-code-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.view-code-btn:hover::before {
+  width: 100%;
+}
+
+.view-code-btn:hover {
+  color: #121212;
 }
 
 /************ About Css ************/
