@@ -135,6 +135,18 @@ span.navbar-text {
   display: flex;
   align-items: center;
 }
+.navbar h4 {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+.navbar h4 .highlight {
+  color: #aa367c; /* or any accent color you prefer */
+}
+
 .social-icon {
   display: inline-block;
   margin-left: 14px;
@@ -570,6 +582,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/************ About Css ************/
+.about-section {
+  background-color: #121212;
+  color: #fff;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-section h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.about-img img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #aa367c;
+  box-shadow: 0 0 20px rgba(170, 54, 124, 0.5);
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-family: "Wedges", sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #b8b8b8;
+}
+
+.about-content strong {
+  color: #ffffff;
+}
+
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -714,8 +783,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+.footer {
+  padding: 40px 0;
+  background: #121212;
+  color: #fff;
+}
 .footer img {
   width: 26%;
+}
+.footer h3 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700;
+  font-size: 40px;
+}
+.highlight {
+  background: linear-gradient(90deg, #aa367c, #4a2fbd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
 }
 .footer p {
   font-weight: 400;
@@ -723,6 +814,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.footer-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 /************ Timeline Css ************/

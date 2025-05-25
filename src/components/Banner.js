@@ -80,10 +80,8 @@ export const Banner = () => {
                     Software Development. With a background in computer science
                     and a love for creativity, I enjoy combining technical
                     problem-solving with thoughtful design to build meaningful
-                    and engaging digital experiences. From voice-powered
-                    applications to data-driven platforms, I'm passionate about
-                    using technology to create beautiful and functional
-                    solutions for the world.
+                    and engaging digital experiences. You will find more about
+                    my projects and skills throughout this portfolio.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />

@@ -9,15 +9,20 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} sm={6}>
-            <img
-              src={logo}
-              alt="Logo"
-              style={{ width: "50%", height: "auto" }}
-            />
+        <Row className="align-items-center justify-content-between">
+          {/* Left: Name */}
+          <Col
+            xs={12}
+            md={4}
+            className="text-center text-md-start mb-3 mb-md-0"
+          >
+            <h3>
+              anh <span className="highlight">nguyen</span>
+            </h3>
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+
+          {/* Center: Social Icons */}
+          <Col xs={12} md={4} className="text-center mb-3 mb-md-0">
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/anhng1106"
@@ -41,7 +46,11 @@ export const Footer = () => {
                 <img src={navIcon3} alt="Instagram" />
               </a>
             </div>
-            <p>Copyright 2025. All Rights Reserved</p>
+          </Col>
+
+          {/* Right: Copyright */}
+          <Col xs={12} md={4} className="text-center text-md-end">
+            <p>© 2025. Anh Nguyen. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>

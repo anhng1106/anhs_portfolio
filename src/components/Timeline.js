@@ -1,6 +1,3 @@
-// TimelineBootstrap.js
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import "animate.css";
 
 const timelineData = [
@@ -24,7 +21,7 @@ const timelineData = [
 
 export const Timeline = () => {
   return (
-    <section className="timeline-modern-container">
+    <section className="timeline-modern-container" id="timeline">
       <h2>WORK EXPERIENCE</h2>
       <div className="timeline-modern">
         {timelineData.map((item, index) => (

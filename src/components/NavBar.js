@@ -33,6 +33,11 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
+          <Navbar.Brand href="/" className="navbar-title">
+            <h4>
+              anh <span className="highlight">nguyen</span>
+            </h4>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -57,6 +62,17 @@ export const NavBar = () => {
                 Skills
               </Nav.Link>
               <Nav.Link
+                href="#timeline"
+                className={
+                  activeLink === "timeline"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("timeline")}
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
                 href="#projects"
                 className={
                   activeLink === "projects"
@@ -66,6 +82,15 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
+              </Nav.Link>
+              <Nav.Link
+                href="#about"
+                className={
+                  activeLink === "about" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("about")}
+              >
+                About
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
