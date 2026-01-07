@@ -252,7 +252,8 @@ const bigProjects = {
     {
       image: require("./assets/images/prostoreLogo.png"),
       projectName: "Pro Store",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc:
+        "Make your life easier with ProStore - your all-in-one online shopping solution.",
       footerLink: [
         {
           name: "Visit Website",
