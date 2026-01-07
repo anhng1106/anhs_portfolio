@@ -16,14 +16,23 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
+      fetch(`${process.env.PUBLIC_URL}/profile.json`)
         .then(result => {
+          console.log("fetch result:", result, "ok:", result.ok);
           if (result.ok) {
+            console.log("asadscdsavdsvs");
+
             return result.json();
           }
           throw result;
         })
         .then(response => {
+          console.log("bbbbbbbb", response);
+          console.log(
+            "check data path:",
+            response?.data?.user?.pinnedItems?.edges
+          );
+
           setrepoFunction(response.data.user.pinnedItems.edges);
         })
         .catch(function (error) {

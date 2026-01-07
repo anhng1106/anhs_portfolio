@@ -103,10 +103,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-nextjs"
     },
     {
-      skillName: "springboot",
-      fontAwesomeClassname: "fab fa-springboot"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
